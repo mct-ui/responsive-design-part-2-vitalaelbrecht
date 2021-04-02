@@ -197,6 +197,10 @@ a:focus {
   display: flow-root;
 }
 
+.o-row--gradient {
+  background: linear-gradient(to top right, #5051db, #3887f7);
+  color: white;
+}
 /* size modifiers */
 
 .o-row--lg {
@@ -427,7 +431,8 @@ a:focus {
   height: 1px;
   width: 100%;
   background-color: #7373f5;
-  transform: scaleX(.5);
+
+  transform: scaleX(0.5);
   transform-origin: left;
   transition-property: transform background-color;
   transition-duration: 0.175s;
@@ -438,9 +443,23 @@ a:focus {
   color: #3e3ea8;
 }
 
-.c-link-cta:hover::after {
+.c-link-cta:hover::before {
   transform: scaleX(1);
   background-color: #3e3ea8;
+}
+
+.c-link-cta--inverse,
+.c-link-cta--inverse:visited,
+.c-link-cta--inverse:active {
+  color: #fff;
+}
+
+.c-link-cta--inverse::before {
+  background-color: #fff;
+}
+
+.c-link-cta--inverse:hover::before {
+  background-color: #fff;
 }
 
 /*

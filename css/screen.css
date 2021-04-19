@@ -623,6 +623,65 @@ a:focus {
   }
 }
 
+/*
+    Component: footer
+    ---
+    Main footer of the website
+*/
+.c-footer {
+}
+
+.c-footer__logo {
+}
+
+.c-footer__nav {
+  display: inline-block;
+  margin-right: 48px;
+}
+
+@media (min-width: 768px) {
+  .c-footer {
+  }
+
+  .c-footer__logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .c-footer__nav {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 992px) {
+  .c-footer {
+  }
+
+  .c-footer__logo {
+  }
+
+  .c-footer__logo .c-logo {
+  }
+
+  .c-footer__nav {
+  }
+}
+
+/*
+    Component: Title icon
+    ---
+    Special type of title with icon
+*/
+
+.c-title-icon {
+  display: flex;
+}
+
+.c-title-icon__icon {
+  height: 110px;
+  margin: 0px 16px 0 16px;
+}
+
 /*------------------------------------*\
   #UTILITIES
 \*------------------------------------*/
